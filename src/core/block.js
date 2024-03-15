@@ -6,7 +6,6 @@ class Block {
         this.Timestamp = Date.now()
         this.Data = data
         this.PrevBlockHash = prevBlockHash
-        this.Hash = this.setHash()
 
         const pow = new ProofofWork(this).run()
 
@@ -14,7 +13,7 @@ class Block {
         this.Nonce = pow.nonce;
     }
 
-    // 创建自身的哈希
+    // 创建自身的哈希, 暂时用不到
     setHash() {
         const timestamp = this.Timestamp.toString(10)
         const headers = `${this.PrevBlockHash}, ${this.Data}, ${timestamp}`

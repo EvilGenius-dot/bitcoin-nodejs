@@ -64,12 +64,9 @@ class ProofofWork {
 
         if (hashInt < this.target) {
             res = true
-            console.log(`验证区块: ${this.block.Data} 通过`)
-        } else {
-            console.log(`验证区块: ${this.block.Data} 失败`)
         }
 
-        return hashInt < this.target
+        return res
     }
 }
 

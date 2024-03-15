@@ -94,7 +94,3 @@ inquirer.prompt([
             break;
     }
 });
-
-// // 验证一个区块
-// const pow = new ProofofWork(blockchain.Blocks[1]).validate();
-// console.log(pow)

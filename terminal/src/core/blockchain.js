@@ -16,7 +16,7 @@ class Blockchain {
             console.log('创世区块不存在, 请等待创世区块创建完毕继续操作。')
             console.log('开始创建创世区块...')
             // 创世区块
-            const rootBlock = new Block('RustMinerSystem', '');
+            const rootBlock = new Block('创世区块', '');
             
             // 添加创世区块
             this.db.push(rootBlock)

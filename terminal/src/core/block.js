@@ -5,7 +5,6 @@ class Block {
     constructor(data, prevBlockHash) {
         this.Timestamp = Date.now()
         this.Data = data
-        this.Transations = ''
         this.PrevBlockHash = prevBlockHash
 
         const pow = new ProofofWork(this).run()

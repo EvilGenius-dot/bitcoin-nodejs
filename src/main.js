@@ -11,6 +11,14 @@ inquirer.prompt([
         name: 'choice',
         message: '选择要进行的操作:',
         choices: [
+            // {
+            //     name: '指定钱包挖矿',
+            //     value: 'target-mining'
+            // },
+            // {
+            //     name: '查询钱包余额',
+            //     value: 'target-balance'
+            // },
             {
                 name: '查看所有区块信息',
                 value: 'preview-blocks'
